@@ -1,0 +1,31 @@
+# Node modules (if you have a package.json)
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+bower_components/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Git itself
+.gitignore
+
+# Optional: If you use yarn
+yarn-error.log
