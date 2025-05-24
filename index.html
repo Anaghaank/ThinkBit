@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -10,12 +10,16 @@
   <div class="container">
     <h1>Cognitive & Aptitude Practice Quiz</h1>
     <div id="quiz-container">
-      <div id="question">Question text will appear here</div>
-      <ul id="choices"></ul>
+      <div id="progress">Question <span id="current-question-num">1</span> of <span id="total-questions">5</span></div>
+      <div id="timer">Time Left: <span id="time-left">20</span>s</div>
+      <div id="question" tabindex="0">Question text will appear here</div>
+      <ul id="choices" role="list"></ul>
       <button id="next-btn" disabled>Next</button>
     </div>
-    <div id="result" class="hidden">
+    <div id="result" class="hidden" tabindex="0">
       <h2>Your Score: <span id="score"></span> / <span id="total"></span></h2>
+      <p>Correct answers: <span id="correct-count"></span></p>
+      <p>Wrong answers: <span id="wrong-count"></span></p>
       <button id="restart-btn">Restart Quiz</button>
     </div>
   </div>
