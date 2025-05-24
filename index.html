@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkBit – Aptitude Quiz</title>
-  <link rel="stylesheet" href="../src/css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cognitive & Aptitude Practice Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="quiz-container" id="quiz">
-    <h1>ThinkBit Aptitude Quiz</h1>
-    <div id="question">Loading question...</div>
-    <ul>
-      <li><button class="answer" id="a"></button></li>
-      <li><button class="answer" id="b"></button></li>
-      <li><button class="answer" id="c"></button></li>
-      <li><button class="answer" id="d"></button></li>
-    </ul>
-    <button id="submit">Submit</button>
+  <div class="container">
+    <h1>Cognitive & Aptitude Practice Quiz</h1>
+    <div id="quiz-container">
+      <div id="question">Question text will appear here</div>
+      <ul id="choices"></ul>
+      <button id="next-btn" disabled>Next</button>
+    </div>
+    <div id="result" class="hidden">
+      <h2>Your Score: <span id="score"></span> / <span id="total"></span></h2>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
   </div>
-  <script type="module" src="../src/js/main.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
